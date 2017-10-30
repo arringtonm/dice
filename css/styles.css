@@ -1,13 +1,14 @@
 body {
   background-color: black;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box; }
 
 [class*='-face'] {
   border: 12px solid #AAA;
   border-top: 12px solid white;
   border-bottom: 12px solid #666;
-  background-color: #DDD;
+  background-image: linear-gradient(to bottom, #EEE, #AAA);
   width: 200px;
   height: 200px;
   margin: 20px;
