@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  display: flex;
+  box-sizing: border-box; }
+
+[class*='-face'] {
+  border: 12px solid #AAA;
+  border-top: 12px solid white;
+  border-bottom: 12px solid #666;
+  background-color: #DDD;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.pip {
+  box-sizing: border-box;
+  background-color: #333;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #666; }
+
+.first-face {
+  justify-content: center;
+  align-items: center; }
+
+.second-face .pip:last-child {
+  align-self: flex-end; }
+
+.third-face .pip:nth-child(2) {
+  align-self: center; }
+.third-face .pip:nth-child(3) {
+  align-self: flex-end; }
+
+.fifth-face .column:nth-child(2) {
+  align-self: center; }
+
+/*# sourceMappingURL=styles.css.map */
